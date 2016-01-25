@@ -38,4 +38,8 @@ class config{
     public function close($con) {
         mysqli_close($con);
     }
+
+    public function real_escape_string($string) {
+        return $this->con->real_escape_string($string);
+    }
 }
